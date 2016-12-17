@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>MentoGDUT - a third-party client of Dr.COM 5.2.1(p) for gdut</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="mentogdut is a third-party client of Dr.COM 5.2.1(p) for gdut that lets you share your network freely.">
+	<meta name="keywords" content="mentogdut,gdutdrcom,gdutwifi,gdutopenwrt">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            try {
+                console.info("Join us and share your ideas, resources, expertise, and inspiration!\nMentoGDUT Project\n");
+            } catch(e) {}
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?5dd728650bad76ef37836904e1a10377";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+	<section class="page-header">
+		<h1 class="project-name">MentoGDUT</h1>
+		<h2 class="project-tagline">a third-party client of Dr.COM 5.2.1(p) for gdut</h2>
+		<a href="https://github.com/mentogdut/mentogdut" class="btn" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'github'])">View on GitHub</a>
+		<a href="#gtk" class="btn">Windows Client</a>
+		<a href="#router" class="btn">Router Package</a>
+	</section>
+	<section class="main-content">
+		<h1>
+			<a id="mentogdut" class="anchor" href="#mentogdut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			mentogdut
+		</h1>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;a console application for linux-based OS and all versions of windows,  is a light-weight drcom-client-replacement that enables you to share your network without any limitations.</p>
+		<p>
+            Download:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_linux_windows_x64_20161217.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'rc1217'])">mentogdut_linux_windows_x64_20161217.zip</a><br/>
+			Usage:<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;mentogdut -s svrip [-p port] [-f pppoe-flag] [-k keepalive2_flag] [-m checksum]<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;mentogdut -c conf<br/>
+			Options:
+		</p>
+		<table>
+			<tr>
+				<td>-s,--server &lt;ip&gt;</td><td>the auth server ip</td>
+			</tr>
+			<tr>
+				<td>[-p,--port &lt;port&gt;]</td><td>the auth server port [default: 61440]</td>
+			</tr>
+			<tr>
+				<td>[-f,--pppoe_flag &lt;flag&gt;]</td><td>the pppoe flag [default: 6a]</td>
+			</tr>
+			<tr>
+				<td>[-k,--keep_alive2_flag &lt;flag&gt;]</td><td>the keep alive2 flag [default: dc]</td>
+			</tr>
+			<tr>
+				<td>[-m,--checksum &lt;mode&gt;]</td><td>the checksum mode [default: 0 automatic]</td>
+			</tr>
+			<tr>
+				<td>[-c,--config &lt;file&gt;]</td><td>the path to configuration file</td>
+			</tr>
+			<tr>
+				<td>[-h,--help]</td><td>give this help</td>
+			</tr>
+		</table>
+		<h1>
+			<a id="router" class="anchor" href="#router" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			mentogdut for router
+		</h1>
+		<p>
+            &nbsp;&nbsp;&nbsp;&nbsp;Software package for OpenWRT-based router with LuCI management interface included, can be installed either by the opkg utility or the LuCI.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;*Those packages has been tested with phicomm K2, MT7620, pandorabox 16.10, but it still not guaranteed to be compatible with yours.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;*Upgrade firmware at your own risk. <u>Wrong firmware upgrading may damage your device and avoid the warranty.</u><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-2b_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk202b'])">mentogdut_2.0-2b_mipsel_24kec_dsp.ipk</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-2a_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk202a'])">mentogdut_2.0-2a_mipsel_24kec_dsp.ipk</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-1b_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk201b'])">mentogdut_2.0-1b_mipsel_24kec_dsp.ipk</a>
+        </p>
+		<h1>
+			<a id="gtk" class="anchor" href="#gtk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			MentoGDUT(windows only)
+		</h1>
+		<p>
+            &nbsp;&nbsp;&nbsp;&nbsp;A windows GUI application for mentogdut, including a PPPoE dialer, Wi-Fi hotspot creator and HTTP/FTP based file sharing component.&nbsp;Screenshot can be found at <a href="../zh-cn/">here</a>.<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut-gtk_x64_20161217.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'gui1217'])">mentogdut-gtk_x64_20161217.zip</a><br />
+		    &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut-gtk_x64_20161125.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'gui1125'])">mentogdut-gtk_x64_20161125.zip</a>
+        </p>
+		<h1>
+			<a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			reference
+		</h1>
+		<p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/drcoms/drcom-generic">drcom-generic</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/drcoms/drcom-generic/blob/master/analyses/pppoe_realworld.md">pppoe_realworld</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/drcoms/drcom-generic/blob/master/tests/pppoe_heartbeat_analysis.py">pppoe_heartbeat_analysis.py</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/chenhaowen01/gdut-drcom">gdut-drcom</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd815252(v=vs.85).aspx">Using Wireless Hosted Network and Internet Connection Sharing</a>
+		</p>
+		<h1>
+			<a id="res" class="anchor" href="#res" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			resources
+		</h1>
+		<table border="1" align="center">
+            <tr><td><a href="http://downloads.pandorabox.com.cn/">PandoraBox</a></td><td>an extended ​GNU/​Linux ​distribution for wireless routers based on <a href="https://openwrt.org/">OpenWRT</a></td></tr>
+			<tr><td><a href="https://github.com/nmap/npcap">Npcap</a></td><td>the Nmap Project's packet sniffing library for Windows</td></tr>
+			<tr><td>
+                <a href="../download/drcom_2016.lua" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'lua'])">drcom_2016.lua</a></td><td>drcom protocol analysis plugin for <a href="https://www.wireshark.org/download.html">Wireshark</a>
+                <!-- https://raw.githubusercontent.com/drcoms/drcom-generic/master/utils/drcom_2016.lua -->
+            </td></tr>
+			<tr><td><a href="../download/pppoe_error.txt" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'pppoe'])">pppoe_error.txt</a></td><td>a plain-text version of <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb530704(v=vs.85).aspx">Routing and Remote Access Error Codes (Windows)</a></td></tr>
+		</table>
+        <h1>
+            <a id="related" class="anchor" href="#related" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+            Other related software
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/GDUT-Drcom/Drcom-Dialer/">gdut-drcom-dialer</a><br>
+        </p>
+		<footer class="site-footer">
+            <span class="site-footer-owner"><a href="../zh-cn/">MentoGDUT/English</a> is maintained by <a href="https://github.com/mentogdut">mentogdut</a>.</span>
+			<span class="site-footer-credits">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.</span>
+		</footer>
+	</section>
+</body>
+</html>

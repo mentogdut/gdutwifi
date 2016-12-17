@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>用户自助服务系统</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		function getQueryString(name) {
+	        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	        var r = window.location.search.substr(1).match(reg);
+	        if (r != null) return unescape(r[2]);
+	        return null;
+		}
+        // sso单点实现自动登录
+		document.cookie = "JSESSIONID=" + getQueryString("JSESSIONID") + "; path=/; domain=.mentogdut.cf";
+		location.replace('http://self.mentogdut.cf:1800/Self/nav_main');
+	</script>
+</head>
+<body>
+	<a href="http://222.200.98.8:1800/Self/nav_login">用户自助服务系统</a>
+</body>
+</html>

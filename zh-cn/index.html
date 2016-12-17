@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<title>MentoGDUT - 广东工业大学校园网第三方客户端</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="针对广东工业大学Dr.COM 5.2.1(p)的开源、无限制第三方客户端">
+	<meta name="keywords" content="mentogdut,广工wifi,广工校园网wifi,广东工业大学校园网,广工drcom破解,校园网wifi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            try {
+                console.info("你竟然能看到这个, 然而这并没有什么卵用~!\nMentoGDUT Project\n");
+            } catch(e) {}
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?5dd728650bad76ef37836904e1a10377";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+	<section class="page-header">
+		<h1 class="project-name">MentoGDUT</h1>
+		<h2 class="project-tagline">适用于广东工业大学Dr.COM 5.2.1(p)的第三方客户端</h2>
+		<a href="https://github.com/mentogdut/mentogdut" class="btn" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'github'])">View on GitHub</a>
+		<a href="#gtk" class="btn">Windows客户端</a>
+		<a href="#router" class="btn">路由器版本</a>
+	</section>
+	<section class="main-content">
+		<h1>
+			<a id="mentogdut" class="anchor" href="#mentogdut" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			mentogdut
+		</h1>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;C/C++编写的可运行在Linux/Windows及其衍生系统的控制台小程序, 最小化内存占用并可灵活配置, 是整个第三方客户端的核心。</p>
+		<p>
+            <b>下载</b>:<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_linux_windows_x64_20161217.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'rc1217'])">mentogdut_linux_windows_x64_20161217.zip</a><br />
+            <b>用法</b>:(在命令行或终端中运行)<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;mentogdut -s svrip [-p port] [-f pppoe-flag] [-k keepalive2_flag] [-m checksum]<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;mentogdut -c conf<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;*小技巧: Windows系统中选中所在目录, 按住Shift并右键可快速打开命令行同时切换到相应目录<br />
+            <b>选项</b>:
+		</p>
+		<table>
+			<tr>
+				<td>-s,--server &lt;ip&gt;</td><td>拓展数据认证服务器的IP地址</td>
+			</tr>
+			<tr>
+				<td>[-p,--port &lt;port&gt;]</td><td>认证服务器端口 [默认: 61440]</td>
+			</tr>
+			<tr>
+				<td>[-f,--pppoe_flag &lt;flag&gt;]</td><td>the pppoe flag [默认: 6a]</td>
+			</tr>
+			<tr>
+				<td>[-k,--keep_alive2_flag &lt;flag&gt;]</td><td>the keep alive2 flag [默认: dc]</td>
+			</tr>
+			<tr>
+				<td>[-m,--checksum &lt;mode&gt;]</td><td>心跳使用的CRC校验方式 [默认: 0 自动]</td>
+			</tr>
+			<tr>
+				<td>[-c,--config &lt;file&gt;]</td><td>可选的配置文件路径, 可避免每次指定参数</td>
+			</tr>
+			<tr>
+				<td>[-h,--help]</td><td>输出帮助</td>
+			</tr>
+		</table>
+		<h1>
+			<a id="router" class="anchor" href="#router" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			mentogdut路由器版本
+		</h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;专门提供给路由器使用的软件包, 可通过路由器管理界面的软件包安装或者执行命令opkg install mentogdut.ipk安装。安装后请务必勾选Apply PPPoE Patch否则一般无法成功拨号。<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;*提供的软件包均在斐讯K2(MT7620, pandorabox 16.10)测试过, 但仍无法保证兼容你的路由器, 有问题可以提交。<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;*路由器刷机有风险, 折腾需谨慎!尤其是没经验、没编程器的同学, 建议找人代刷!否则请参照教程一步步来。<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-2b_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk202b'])">mentogdut_2.0-2b_mipsel_24kec_dsp.ipk</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-2a_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk202a'])">mentogdut_2.0-2a_mipsel_24kec_dsp.ipk</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut_2.0-1b_mipsel_24kec_dsp.ipk" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'ipk201b'])">mentogdut_2.0-1b_mipsel_24kec_dsp.ipk</a>
+        </p>
+		<h1>
+			<a id="gtk" class="anchor" href="#gtk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			MentoGDUT界面版本(仅适配Windows)
+		</h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut-gtk_x64_20161217.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'gui1217'])">mentogdut-gtk_x64_20161217.zip</a><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/mentogdut-gtk_x64_20161125.zip" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'gui1125'])">mentogdut-gtk_x64_20161125.zip</a>
+        </p>
+        <p align="center">
+			客户端拨号界面<br/><img src='../download/main.png' alt='main' /><br/>
+            内建WIFI分享<br /><img src='../download/wifi.png' alt='wifi' /><br />
+            局域网文件分享<br /><img src='../download/share.png' alt='share' />
+		</p>
+		<h1>
+			<a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			参考资料
+		</h1>
+		<p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/drcoms/drcom-generic/wiki/%E5%85%B3%E4%BA%8EP%E7%89%88%E7%9A%84PPPoE%E6%8B%A8%E5%8F%B7%E9%97%AE%E9%A2%98">关于P版的PPPoE拨号问题</a><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;详细引用请移步<a href="../en-us/">英文版</a>网页, 此处不再更新。
+		</p>
+        <h1>
+            <a id="res" class="anchor" href="#res" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+            其它资源
+        </h1>
+        <table border="1" align="center">
+            <tr><td><a href="http://downloads.pandorabox.com.cn/">PandoraBox</a></td><td>潘多拉路由器固件官方下载地址, 刷机教程基本可以在<a href="http://www.right.com.cn/forum/forum.php">这里</a>找到</td></tr>
+            <tr><td><a href="https://github.com/nmap/npcap">Npcap</a></td><td>替代WinPcap的新型Windows网络数据包截获软件, Win10及以上系统建议使用</td></tr>
+            <tr>
+                <td>
+                    <a href="../download/drcom_2016.lua" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'lua'])">drcom_2016.lua</a>
+                </td>
+                <td>
+                    针对 <a href="https://www.wireshark.org/download.html">Wireshark</a> 的 drcom 协议分析插件
+                    <!-- https://raw.githubusercontent.com/drcoms/drcom-generic/master/utils/drcom_2016.lua -->
+                </td>
+            </tr>
+            <tr><td><a href="../download/pppoe_error.txt" onclick="_hmt.push(['_trackEvent', 'nav', 'click', 'pppoe'])">pppoe_error.txt</a></td><td>微软提供给开发者的PPPoE拨号错误代码及其含义</td></tr>
+        </table>
+        <h1>
+            <a id="related" class="anchor" href="#related" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+            类似软件
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tools.bigkeer.cn/drcom/">gdut-drcom-dialer</a>&nbsp;&nbsp;这个比较diao, 宇工大狗联网拨号器, 如果MentoGDUT哪天挂了或者你不喜欢可以使用这个, 有专人更新。<br>
+        </p>
+		<footer class="site-footer">
+            <span class="site-footer-owner"><a href="../en-us/">MentoGDUT/中文版</a> 由 <a href="https://github.com/mentogdut">mentogdut</a> 负责维护。</span>
+			<span class="site-footer-credits">软件核心源码来自开源社区并对全体成员开放,仅供内部免费测试使用,任何人不得以任何形式公开销售、复制和散发。<br>软件以“现状”方式提供,作者不对该软件作任何明确的、隐含的或法定的保证,包括但不限于任何关于可销售性、特定用途的适用性或不损害第三方利益的隐含保证。</span>
+		</footer>
+	</section>
+</body>
+</html>
