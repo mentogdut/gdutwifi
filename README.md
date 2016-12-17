@@ -5,12 +5,12 @@ a free and unlimited third-party client of Dr.COM 5.2.1(p) for gdut
 # background
 the official drcom client has many limitations which may disturb us a lot, for example,  
 1. Network Sharing is forbidden, even though you just intend to connect wifi on your own devices.  
-2. High Memory Usage. There was 3 processes kept in the background(windows version).  
+2. High Memory Usage. There were 3 processes kept in the background(windows version).  
 3. Lack of Features. Once the connection was dropped, you have to reconnect manually.  
 4. Some kinds of software like VPN may not work as expected.  
 5. I just don't want to use it. (＃－.－)/  
 6. ...  
-In a word, mentogdut is a workaround of this.
+In a word, mentogdut is a workaround of this.  
 
 # reference
 [drcom-generic][1]  
