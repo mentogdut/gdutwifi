@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MentoGDUT - 如何修复校园网无法下载QQ群文件、图片加载慢?</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="修复校园网无法下载QQ群文件、图片加载慢技巧">
+	<meta name="keywords" content="mentogdut,广工wifi,广工校园网wifi,广东工业大学校园网,广工drcom破解,校园网wifi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            try {
+                console.info("你竟然能看到这个, 然而这并没有什么卵用~!\nMentoGDUT Project\n");
+            } catch(e) {}
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?5dd728650bad76ef37836904e1a10377";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+	<section class="page-header">
+		<h1 class="project-name">如何修复校园网无法下载QQ群文件?</h1>
+		校园网打开QQ群文件时不时要么打不开，要么下载速度为0，真心烦人，这里提供几种方案解决。
+	</section>
+	<section class="main-content">
+		<h2>
+			<a id="v1" class="anchor" href="#v1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案一
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;问题的根源大都在于DNS返回的CDN线路不适合校园网, 所以可以修改DNS解决，比如中科大的。<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;然而修改了DNS往往导致解决了这个问题，又出现了另一个问题，并且校外DNS不能很好的进行出口分配(虽然学校的DNS还有待改进), 所以作者还是建议自动获取。
+		</p>
+		<h2>
+			<a id="v2" class="anchor" href="#v2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案二
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;添加以下项到hosts文件, 并执行ipconfig /flushdns, 重启QQ生效。
+            <pre>
+127.0.0.1    report.huatuo.qq.com
+183.57.48.94    pan.qun.qq.com
+219.133.60.192    sz-ctfs.ftn.qq.com</pre>
+            &nbsp;&nbsp;&nbsp;&nbsp;IP可能会有变动, 如发现不能用了请删除或者打开本页面查看更新。
+		</p>
+		<h2>
+			<a id="v3" class="anchor" href="#v3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案三
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;1.把QQ群文件转发给自己, 再下载。<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;2.打开QQ群空间网页版, 用浏览器进行下载。
+		</p>
+		<footer class="site-footer">
+            	<span class="site-footer-owner"><a href="/">MentoGDUT</a> 由 <a href="https://github.com/mentogdut">mentogdut</a> 负责维护。</span>
+			<span class="site-footer-credits">软件核心源码来自开源社区并对全体成员开放,仅供内部免费测试使用,任何人不得以任何形式公开销售、复制和散发。<br>软件以“现状”方式提供,作者不对该软件作任何明确的、隐含的或法定的保证,包括但不限于任何关于可销售性、特定用途的适用性或不损害第三方利益的隐含保证。</span>
+		</footer>
+	</section>
+</body>
+</html>

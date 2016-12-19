@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MentoGDUT - 如何禁用校园网烦人的客户端下载弹窗?</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="禁用广工校园网烦人的客户端下载自动弹窗教程">
+	<meta name="keywords" content="mentogdut,广工wifi,广工校园网wifi,广东工业大学校园网,广工drcom破解,校园网wifi">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            try {
+                console.info("你竟然能看到这个, 然而这并没有什么卵用~!\nMentoGDUT Project\n");
+            } catch(e) {}
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?5dd728650bad76ef37836904e1a10377";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+	<section class="page-header">
+		<h1 class="project-name">如何禁用校园网烦人的客户端下载弹窗?</h1>
+		每次开机、网卡重启、物理线路断开等都会弹出客户端下载页面，显得十分多余。
+	</section>
+	<section class="main-content">
+		<h2>
+			<a id="v1" class="anchor" href="#v1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案一
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;设置其它浏览器为默认浏览器，不要设置IE、Edge为默认浏览器。(如果不行请继续下面的方案)
+		</p>
+		<h2>
+			<a id="v2" class="anchor" href="#v2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案二
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a href="../download/NetworkConnectivityStatusIndicator.zip">点此</a>下载注册表配置项，然后运行里面的 禁用网络状态检测.reg 即可。<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;*微软说禁用后可能会有副作用, 比如网络连接一直显示感叹号, 然而作者禁用了并没发现这个问题(win10)。此时你可以运行 恢复网络状态检测.reg 恢复。
+		</p>
+		<h2>
+			<a id="v3" class="anchor" href="#v3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+			方案三
+		</h2>
+		<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;其实和方案二是一个意思<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;1.按下Windows键+R键，弹出运行(Run)窗口<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;2.输入 gpedit.msc (或者 gpmc.msc ), 回车<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;3.依次找到计算机配置(Computer Configuration) > 管理模版(Administrative Templates) > 系统(System) > Internet Communication Management > Internet Communication settings<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;4.找到关闭网络连接状态指示活跃检测(Turn off Windows Network Connectivity Status Indicator active tests), 设置为已启用(Enabled)
+		</p>
+		<footer class="site-footer">
+            	<span class="site-footer-owner"><a href="/">MentoGDUT</a> 由 <a href="https://github.com/mentogdut">mentogdut</a> 负责维护。</span>
+			<span class="site-footer-credits">软件核心源码来自开源社区并对全体成员开放,仅供内部免费测试使用,任何人不得以任何形式公开销售、复制和散发。<br>软件以“现状”方式提供,作者不对该软件作任何明确的、隐含的或法定的保证,包括但不限于任何关于可销售性、特定用途的适用性或不损害第三方利益的隐含保证。</span>
+		</footer>
+	</section>
+</body>
+</html>
